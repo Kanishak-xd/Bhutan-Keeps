@@ -21,6 +21,17 @@ nav {
     padding-top: 1%;
     font-size: 25px;
     width: 20%;
+    text-decoration: none;
+}
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo a:visited {
+    color: inherit;
+}
+.logo a:hover, .logo a:active {
+    color: inherit;
 }
 .searchBar {
     width: 40%;
