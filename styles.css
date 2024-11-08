@@ -667,32 +667,8 @@ ul li img {
     margin-left: 20%;
     padding-bottom: 0%;
 }
-
 /* PSYCHOPATHIC ACTIVITY ------------------- */
 /* #section3 {background-color: #FDDBBB;}.rachuHeader {background-color: aqua;}.rachuBox {background-color: yellowgreen;}.rachuBoxes {background-color: yellow;}.rachuData1 {background-color: yellowgreen;}.productName {background-color: aqua;}.productCartButton {background-color: #CDC1FF;}.rachuData2 {background-color: yellow;}.rachuData3 {background-color: wheat;}.rachuFooter {background-color: violet;} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #section4 {
     background-color: #FFF9BF;
@@ -703,13 +679,87 @@ ul li img {
 #section6 {
     background-color: #CDC1FF;
 }
+/* Footer Section */
 #section7 {
     height: 45vh;
-    background-color: #FFF6E3;
+    background-color: #D9D9D9;
+    border-top: #000000 2px solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Custom Scrollbar ------------------------- */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
 
+.footer-section {
+    flex: 1;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: #333;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    gap: 5px;
+}
+
+.footer-section ul li {
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+/* Custom Scrollbar ------------------------- */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
