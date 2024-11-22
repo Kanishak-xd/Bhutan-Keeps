@@ -108,11 +108,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Create a Range object to measure the text bounds
             const range = document.createRange();
             range.selectNodeContents(header);
+
             // Get the bounding rectangle of the text
             const textRect = range.getBoundingClientRect();
+
             // Get the bounding rectangle of the click
             const clickX = event.clientX;
             const clickY = event.clientY;
+
             // Check if the click is within the text bounds
             if (
                 clickX >= textRect.left &&
@@ -120,15 +123,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 clickY >= textRect.top &&
                 clickY <= textRect.bottom
             ) {
-                const sectionTitle = header.textContent.trim();
-                window.location.href = `searches.html?section=${encodeURIComponent(sectionTitle)}`;
+                let sectionTitle = header.textContent.trim();
+
+                // Remove 'See all' and any unwanted characters after it (like arrows or extra symbols)
+                sectionTitle = sectionTitle.replace('See all ', '').replace(/[^\w\s]/g, '').trim();
+
+                // Redirect to searches.html with the cleaned search term
+                window.location.href = `searches.html?q=${encodeURIComponent(sectionTitle)}`;
             }
         });
     });
 
 
 
-    
+
     // Mapping categBox IDs to their respective search terms
     const categBoxMappings = {
         categBox4: "Rachu",
@@ -147,6 +155,94 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href = `searches.html?q=${encodeURIComponent(searchTerm)}`;
             });
         }
+    });
+
+    // GO TO SEARCHES PAGE + SET SEARCHBAR = Rachu
+    function redirectToSearchWithRachu() {
+        window.location.href = "searches.html?q=" + encodeURIComponent("Rachu");
+    } 
+    // GO TO SEARCHES PAGE + SET SEARCHBAR = Wonju
+    function redirectToSearchWithWonju() {
+        window.location.href = "searches.html?q=" + encodeURIComponent("Wonju");
+    } 
+    // GO TO SEARCHES PAGE + SET SEARCHBAR = Tego
+    function redirectToSearchWithTego() {
+        window.location.href = "searches.html?q=" + encodeURIComponent("Tego");
+    } 
+    // GO TO SEARCHES PAGE + SET SEARCHBAR = Kira
+    function redirectToSearchWithKira() {
+        window.location.href = "searches.html?q=" + encodeURIComponent("Kira");
+    } 
+    // GO TO SEARCHES PAGE + SET SEARCHBAR = Accessories
+    function redirectToSearchWithAccessories() {
+        window.location.href = "searches.html?q=" + encodeURIComponent("Accessories");
+    } 
+    // Correct selector for footer links
+    const footerLinks = document.querySelectorAll(".footer-section ul li a");
+
+    footerLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            const linkText = link.textContent.trim(); // Get the text content of the link
+
+            // Trigger the appropriate function based on link text
+            switch (linkText) {
+                case "Shop for Rachu":
+                    redirectToSearchWithRachu();
+                    break;
+                case "Shop for Wonju":
+                    redirectToSearchWithWonju();
+                    break;
+                case "Shop for Tego":
+                    redirectToSearchWithTego();
+                    break;
+                case "Shop for Kira":
+                    redirectToSearchWithKira();
+                    break;
+                case "Shop for Accessories":
+                    redirectToSearchWithAccessories();
+                    break;
+                default:
+                    console.warn("No matching function for:", linkText);
+            }
+        });
+    });
+
+
+
+
+
+    // Correct selector for categories links
+    const categoryLinks = document.querySelectorAll(".categories ul li a");
+
+    categoryLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            const linkText = link.textContent.trim(); // Get the text content of the link
+
+            // Trigger the appropriate function based on link text
+            switch (linkText) {
+                case "Rachu":
+                    window.location.href = "searches.html?q=" + encodeURIComponent("Rachu");
+                    break;
+                case "Tego":
+                    window.location.href = "searches.html?q=" + encodeURIComponent("Tego");
+                    break;
+                case "Wonju":
+                    window.location.href = "searches.html?q=" + encodeURIComponent("Wonju");
+                    break;
+                case "Kira":
+                    window.location.href = "searches.html?q=" + encodeURIComponent("Kira");
+                    break;
+                case "Accessories":
+                    window.location.href = "searches.html?q=" + encodeURIComponent("Accessories");
+                    break;
+                default:
+                    console.warn("No matching function for:", linkText);
+            }
+        });
     });
 });
 
