@@ -116,3 +116,263 @@ ul li img {
     background-color: darkgrey;
     transform: translateY(-3px);
 }
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between boxes */
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0 5%;
+}
+
+.rachuBoxes {
+    flex: 1 1 calc(20% - 20px); /* 5 items per row, accounting for spacing */
+    box-sizing: border-box;
+    height: 400px; /* Adjust height for consistent visuals */
+    border-radius: 25px;
+    background-color: white;
+    border: black 4px solid;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.rachuBoxes:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+}
+
+.rachuImage {
+    height: 65%;
+    width: 100%;
+    border-bottom: 4px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+    background-image: url("resources/kira1.png");
+}
+
+#rachuImg1 {
+    background-image: url("resources/kira1.png");
+}
+/* Repeat for other images as needed */
+
+.rachuData {
+    background-color: white;
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.rachuData1 {
+    height: 30%;
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.productName {
+    width: 75%;
+    font-size: 90%;
+}
+.productName h1 {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.productCartButton {
+    width: 15%;
+    height: 100%;
+    background-image: url("resources/navCart.png");
+    background-size: cover;
+    margin-left: 5%;
+}
+
+.rachuData2 {
+    height: 20%;
+    width: 92%;
+}
+.rachuData2 h1 {
+    margin-top: 2%;
+    color: #646464;
+    font-size: 1rem;
+}
+
+.rachuData3 {
+    height: 20%;
+    width: 92%;
+}
+.rachuData3 img {
+    margin-top: 2%;
+    height: 80%;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section -------------------------- */
+#section8 {
+    height: 45vh;
+    width: 100vw;
+    background-color: #000000;
+    border-top: #000000 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 100%;
+    max-width: 90%;
+    /* padding: 1000px 1000px auto 1000px; */
+
+}
+.footer-section {
+    flex: 1;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+
+}
+.footer-section h3 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#footerSiteName {
+    margin-right: 10%;
+    text-align: center;
+    align-items: center;
+}
+#footerSiteName h3 {
+    font-size: 52px;
+}
+#footerSiteName p{
+    margin-top: 4%;
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+}
+.social-icons a img {
+    width: 55px;
+    height: 55px;
+}
+.footer-section p,
+.footer-section ul {
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 400;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    gap: 5px;
+    align-items: flex-start;
+
+}
+.footer-section ul li {
+    margin: 0;
+    justify-content: flex-start;
+    text-align: left;
+}
+.footer-section ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+#aboutUsSection {
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    /* transform: translateY(1000px); */
+}
+.footer-bottom {
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-top: 2%;
+    padding-top: 2%;
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Custom Scrollbar ------------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #000000;
+    border: 1px solid #000000;
+}
