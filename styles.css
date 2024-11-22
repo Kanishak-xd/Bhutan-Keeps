@@ -22,7 +22,11 @@ nav {
     /* height: 70px; */
     /* background-color: transparent;  */
     height: 9%;
-    background-color: white; 
+    background-color: white;
+    /* glass morph effect */
+    /* background-color: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: #000000 1px solid; */
     top: 0;
     z-index: 1;
 }
@@ -296,7 +300,7 @@ ul li img {
 #categBox4 { /* Rachu Outer Box */
     height: 100%;
     width: 49%;
-    background-image: url("resources/kiraOrange.png");
+    background-image: url("resources/kiraPurple.png");
     background-size: cover;
     justify-content: center;
     border-radius: 25px;
@@ -328,7 +332,7 @@ ul li img {
 #categBox5 { /* Tego Outer Box */
     height: 100%;
     width: 49%;
-    background-image: url("resources/kiraPurple.png");
+    background-image: url("resources/kiraOrange.png");
     background-size: cover;
     justify-content: center;
     border-radius: 25px;
