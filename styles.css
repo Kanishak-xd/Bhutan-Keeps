@@ -190,7 +190,14 @@ ul li img {
     /* align-items: flex-start; */
     text-align: left;
     padding-top: 12%;
-    padding-left: 3%;
+    padding-left: 3%;    
+    background-size: 103%;
+    background-position: center;
+    transition: background-size 1s ease;
+}
+#box4:hover{
+    background-size: 110%; /* Scale up smoothly */
+    cursor: pointer;
 }
 #box4 h1{
     font-size: 260%;
@@ -208,18 +215,30 @@ ul li img {
     text-align: left;
     padding-top: 12%;
     padding-left: 3%;
+    background-size: 103%;
+    background-position: center;
+    transition: background-size 1s ease;
+}
+#box5:hover{
+    background-size: 110%; /* Scale up smoothly */
+    cursor: pointer;
 }
 #box5 h1{
     font-size: 260%;
     color: white;
 }
-#box6{ /* Right Box */
+#box6 {
     height: 100%;
     width: 50%;
     background-image: url("resources/rightBoxImg.png");
-    background-size: cover;
+    background-size: 103%;
+    background-position: center;
     border-radius: 25px;
     justify-content: flex-start;
+    transition: background-size 1s ease;
+}
+#box6:hover {
+    background-size: 107%; /* Scale up smoothly */
 }
 #box7{ /* Price Box */
     height: 10%;
@@ -535,6 +554,9 @@ ul li img {
     display: flex;
     flex-direction: column;
 }
+.rachuBoxes:hover {
+    cursor: pointer;
+}
 .rachuImage {
     height: 65%;
     width: 100%;
@@ -653,6 +675,9 @@ ul li img {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+.rachuNavLeft:hover {
+    cursor: pointer;
+}
 .rachuNavLeft img {
     height: 100%;
     margin-left: 15%;
@@ -665,6 +690,9 @@ ul li img {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-left: 3%;
+}
+.rachuNavRight:hover {
+    cursor: pointer;
 }
 .rachuNavRight img {
     height: 100%;
