@@ -254,6 +254,9 @@ ul li img {
     font-weight: 500;
     font-size: 200%;
 }
+#box7:hover {
+    transform: scale(1.05);
+}
 #box8 { /* Cart Button */
     width: 20%;
     height: 80%;
@@ -320,10 +323,17 @@ ul li img {
     height: 100%;
     width: 49%;
     background-image: url("resources/kiraPurple.png");
-    background-size: cover;
     justify-content: center;
     border-radius: 25px;
     border:#000000 5px solid;
+    background-position: center;
+    transition: background-size 1s ease;
+    background-size: 150%;
+
+}
+#categBox4:hover {
+    background-size: 155%;
+    cursor: pointer;
 }
 #categBox6 { /* Rachu Box */
     height: 15%;
@@ -352,10 +362,16 @@ ul li img {
     height: 100%;
     width: 49%;
     background-image: url("resources/kiraOrange.png");
-    background-size: cover;
     justify-content: center;
     border-radius: 25px;
     border:#000000 5px solid;
+    background-position: center;
+    transition: background-size 1s ease;
+    background-size: 150%;
+}
+#categBox5:hover {
+    background-size: 155%;
+    cursor: pointer;
 }
 #categBox8 { /* Tego Box */
     height: 15%;
@@ -400,6 +416,13 @@ ul li img {
     border: #000000 5px solid;
     border-radius: 25px;
     justify-content: center;
+    background-position: center;
+    transition: background-size 1s ease;
+    background-size: 105%;
+}
+#categBox12:hover {
+    cursor: pointer;
+    background-size: 110%;
 }
 #categBox14 { /* Wonju Box */
     height: 25%;
@@ -437,6 +460,13 @@ ul li img {
     border-radius: 25px;
     margin-left: 2%;
     justify-content: center;
+    background-position: center;
+    transition: background-size 1s ease;
+    background-size: 105%;
+}
+#categBox13:hover {
+    cursor: pointer;
+    background-size: 110%;
 }
 #categBox16 { /* Kira White Box */
     height: 25%;
@@ -475,6 +505,13 @@ ul li img {
     /* margin-left: 2%; */
     justify-content: center;
     margin-top: 2%;
+    background-position: center;
+    transition: background-size 1s ease;
+    background-size: 140%;
+}
+#categBox11:hover {
+    background-size: 145%;
+    cursor: pointer;
 }
 #categBox18 { /* Accessories White Box */
     height: 25%;
@@ -677,6 +714,7 @@ ul li img {
 }
 .rachuNavLeft:hover {
     cursor: pointer;
+    transform: scale(1.02);
 }
 .rachuNavLeft img {
     height: 100%;
@@ -693,6 +731,7 @@ ul li img {
 }
 .rachuNavRight:hover {
     cursor: pointer;
+    transform: scale(1.02);
 }
 .rachuNavRight img {
     height: 100%;

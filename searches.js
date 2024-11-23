@@ -104,7 +104,54 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+    // CHANGING PRODUCTS BASED ON ADDRESS + SEARCH BAR INPUT ---------------------------------
+    const searchBar = document.querySelector(".searchBar input[type='text']"); // The search bar
+    const rachuImages = document.querySelectorAll("[id^='rachuImg']"); // Select all elements with IDs starting with "rachuImg"
+    const searchTerm = document.querySelector(".searchTermBox2 h1"); // The <h1> inside .searchTermBox2
+    // Function to determine the image URL based on input value
+    const getData = (value) => {
+        switch (value.toLowerCase()) {
+            case "rachu":
+                return { imageURL: "resources/kira1.png", text: "RACHU" };
+            case "wonju":
+                return { imageURL: "resources/kira2.png", text: "WONJU" };
+            case "tego":
+                return { imageURL: "resources/kira3.png", text: "TEGO" };
+            case "kira":
+                return { imageURL: "resources/kira4.png", text: "KIRA" };
+            case "accessories":
+                return { imageURL: "resources/kira5.png", text: "ACCESSORIES" };
+            default:
+                return { imageURL: "", text: "UNKNOWN" };
+        }
+    };
+    // Function to update images and text dynamically
+    const updatePageContent = (value) => {
+        const { imageURL, text } = getData(value); // Get the data for the value
+        // Update images
+        if (imageURL) {
+            rachuImages.forEach((rachuImage) => {
+                rachuImage.style.backgroundImage = `url('${imageURL}')`;
+            });
+        }
+        // Update the h1 text
+        if (searchTerm && text) {
+            searchTerm.textContent = text;
+        }
+    };
+    // Check the URL's query parameter for the `q` value
+    const params = new URLSearchParams(window.location.search);
+    const queryValue = params.get("q");
+    if (queryValue) {
+        updatePageContent(queryValue); // Update page content based on the query parameter
+    }
+    // Add an event listener for search bar input
+    if (searchBar) {
+        searchBar.addEventListener("input", (event) => {
+            const searchValue = event.target.value.trim(); // Get the trimmed search value
+            updatePageContent(searchValue); // Update page content dynamically
+        });
+    }//-------------------------------------------------------------------------------------
 
 
 

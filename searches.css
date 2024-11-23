@@ -117,7 +117,31 @@ ul li img {
     transform: translateY(-3px);
 }
 
+/* PRODUCT GRID --------------------- */
 
+.searchTermBox1 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 15vh;
+    /* background-color: aqua; */
+    justify-content: center;
+}
+.searchTermBox2 {
+    margin-left: 5%;
+    width: 30%;
+    height: 90%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.searchTermBox2 h1 {
+    font-size: 400%;
+    font-weight: 600;
+}
+
+/* PRODUCT GRID --------------------- */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -126,7 +150,6 @@ ul li img {
     margin: 20px 0;
     padding: 0 5%;
 }
-
 .rachuBoxes {
     flex: 1 1 calc(20% - 20px); /* 5 items per row, accounting for spacing */
     box-sizing: border-box;
@@ -138,13 +161,11 @@ ul li img {
     flex-direction: column;
     transition: transform 0.3s, background-color 0.3s;
 }
-
 .rachuBoxes:hover {
     cursor: pointer;
     background-color: #f0f0f0;
     transform: translateY(-5px);
 }
-
 .rachuImage {
     height: 65%;
     width: 100%;
@@ -154,12 +175,66 @@ ul li img {
     background-size: cover;
     background-image: url("resources/kira1.png");
 }
-
 #rachuImg1 {
     background-image: url("resources/kira1.png");
 }
-/* Repeat for other images as needed */
-
+#rachuImg2 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg3 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg4 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg5 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg6 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg7 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg8 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg9 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg10 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg11 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg12 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg13 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg14 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg15 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg16 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg17 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg18 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg19 {
+    background-image: url("resources/kira1.png");
+}
+#rachuImg20 {
+    background-image: url("resources/kira1.png");
+}
 .rachuData {
     background-color: white;
     height: 35%;
@@ -171,7 +246,6 @@ ul li img {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
 .rachuData1 {
     height: 30%;
     width: 92%;
@@ -179,7 +253,6 @@ ul li img {
     flex-direction: row;
     gap: 2%;
 }
-
 .productName {
     width: 75%;
     font-size: 90%;
@@ -188,7 +261,6 @@ ul li img {
     font-size: 1rem;
     text-align: left;
 }
-
 .productCartButton {
     width: 15%;
     height: 100%;
@@ -196,25 +268,23 @@ ul li img {
     background-size: cover;
     margin-left: 5%;
 }
-
 .rachuData2 {
     height: 20%;
     width: 92%;
 }
 .rachuData2 h1 {
-    margin-top: 2%;
+    margin-top: 0%;
     color: #646464;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
-
 .rachuData3 {
     height: 20%;
     width: 92%;
 }
 .rachuData3 img {
     margin-top: 2%;
-    height: 80%;
-    width: 50%;
+    height: 90%;
+    width: 45%;
 }
 
 
