@@ -1,11 +1,14 @@
 body, html {
     scroll-behavior: smooth;
 }
+body {
+    font-family: "Inter", sans-serif;
+    transition: font-family 0.3s ease, font-size 0.3s ease;
+}
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     /* overflow-x: hidden; */
 }
@@ -81,7 +84,10 @@ ul li img {
     height: 40px;
     width: 40px;
 }
-
+nav ul li a:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-in-out;
+}
 /* CATEGORY STRIP -------------------- */
 
 .categories {
@@ -116,7 +122,6 @@ ul li img {
     background-color: darkgrey;
     transform: translateY(-3px);
 }
-
 /* ALL SECTIONS ---------------------- */
 
 .sections {
